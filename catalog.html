@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог гостинниц</title>
+  </head>
+<body>
+    <header class="main-header">
+        <nav class="main-navigator">
+            <ul>
+                <li>
+                    <a href="#">ИНФОРМАЦИЯ</a>
+                </li>
+                <li>
+                    <a href="#">ФОТО И ВИДЕО</a>
+                </li>
+                <li>
+                    <a href="#">КАРТА ШТАТА</a>
+                </li>
+                <li>
+                    <a href="#">ГОСТИННИЦЫ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Блок condition - блок, расположенный вверху, с выбором условий проживания-->
+        <div class="condition">
+            <section class="option">
+                <div class="option-infrast">
+                <h2> Инфраструктура </h2>
+                    <label> 
+                        Бассейн
+                        <input type="checkbox" name="pool" checked>
+                    </label>
+                    <label> 
+                        Парковка
+                        <input type="checkbox" name="parking" >
+                    </label>
+                    <label> 
+                        Wi-fi
+                        <input type="checkbox" name="wifi" >
+                    </label>
+                </div>
+            </section>
+            <section class="option">
+                <div class="option-house">
+                <h2> Тип жилья: </h2>
+                    <label> 
+                        Гостиница
+                        <input type="checkbox" name="hotel" checked>
+                    </label>
+                    <label> 
+                        Мотель
+                        <input type="checkbox" name="motel" checked>
+                    </label>
+                    <label> 
+                        Апартаменты
+                        <input type="checkbox" name="apartments" checked>
+                    </label>
+                </div>
+            </section>
+            <section class="option">
+                <div class="option-price">
+                <h2> Стоимость в сутки (руб): </h2>
+                    <div class="interval-price">
+                        <!-- Пока не могу понять, что тут использовать. 
+                                Мне кажется раз значения меняются, то это CSS-->
+                    </div>
+                    <input type="submit" value="Показать">
+                </div>
+            </section>
+        </div>
+        <section class="result">
+            <span> Найдено: </span>
+            <!-- тут циферку результата пока тоже не знаю-->
+        </section>
+        <section class="sort">
+            <p> сортировка: </p>
+            <a class="sort-price" href="#"> по цене</a>
+            <a class="sort-type" href="#"> по типу</a>
+            <a class="sort-rating" href="#"> по рейтингу</a>
+            <a class="sort-up" href="#"> по возрастанию</a>
+            <a class="sort-down" href="#"> по убыванию</a>
+        </section> <hr>
+        <section class="index-hotel">
+            <div class="img-hotel">
+                <img src="http://placehold.it/150x100" width="" height="" alt="Amara resort & spa">
+            </div>
+            <div class="info-hotel">
+                <h3>AMARA RESORT & SPA</h3> 
+                <p> Гостиница</p>
+                <p> от 3500 P.</p>
+                <button class="btn info-hotel-more"> Подробнее</button>
+                <button class="btn info-hotel-book"> Забронировать</button>
+            </div>
+            <div class="rating">
+                <p> Рейтинг:8,5</p>
+            </div>
+        </section> <hr>
+        <section class="index-hotel">
+            <div class="img-hotel">
+                <img src="http://placehold.it/150x100" width="" height="" alt="DESERT QUAIL INN">
+            </div>
+            <div class="info-hotel">
+                <h3>DESERT QUAIL INN</h3> 
+                <p> Мотель</p>
+                <p> от 2000 P.</p>
+                <button class="btn info-hotel-more"> Подробнее</button>
+                <button class="btn info-hotel-book"> Забронировать</button>
+            </div>
+            <div class="rating">
+                <p> Рейтинг:8,9</p>
+            </div>
+        </section> <hr>
+        <section class="index-hotel">
+            <div class="img-hotel">
+                <img src="http://placehold.it/150x100" width="" height="" alt="VILLAS AT POCO DIABLO">
+            </div>
+            <div class="info-hotel">
+                <h3>VILLAS AT POCO DIABLO</h3> 
+                <p> Апартаменты</p>
+                <p> от 4000 P.</p>
+                <button class="btn info-hotel-more"> Подробнее</button>
+                <button class="btn info-hotel-book"> Забронировать</button>
+            </div>
+            <div class="rating">
+                <p> Рейтинг:9,2</p>
+            </div>
+        </section> <hr>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-hashtag">
+            <a href="#"> #visitsedona </a>  
+        </div>
+        <div class="footer-social">
+            <a class="social-btn-twitter" href="#"> Твиттер </a>
+            <a class="social-btn-facebook" href="#"> Фейсбук </a>
+            <a class="social-btn-youtube" href="#"> Ютуб </a>
+        </div>
+        <div class="footer-copyright">
+            <p> Website by</p>
+            <a href="#"> HTML Academy</a>
+        </div>
+    </footer>
+  </body>
+</html>

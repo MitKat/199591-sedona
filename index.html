@@ -2,11 +2,125 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона от Катерины</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+      <header class="main-header">
+        <nav class="main-navigator">
+            <ul>
+                <li>
+                    <a href="#">ИНФОРМАЦИЯ</a>
+                </li>
+                <li>
+                    <a href="#">ФОТО И ВИДЕО</a>
+                </li>
+                <li>
+                    <a href="#">КАРТА ШТАТА</a>
+                </li>
+                <li>
+                    <a href="#">ГОСТИННИЦЫ</a>
+                </li>
+            </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="logotip">
+            <img src="http://placehold.it/150x100" width="460" height="350" alt="Седона">
+        </div>
+        <span class="definiton">Седона - небольшой городок в Аризоне, заслуживающий большего!
+        </span>
+        <p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+<!-- Секция с классом cause включает в себя две строки-->
+        <section class="cause">
+            <div class="cause-1">
+                <div class="cause-1-left">
+                    <h2> Настоящий городок </h2>
+                    <p> Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                </div>
+                <div class="cause-1-img">
+                    <img src="http://placehold.it/150x100" width="" height="" alt="Настоящий городок">
+                </div>
+            </div>
+            <div class="cause-2">
+                <div class="cause-2-left">
+                    <h2> Жилье </h2> 
+                    <p> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </div>
+                <div class="cause-2-center">
+                    <h2> Еда </h2> 
+                    <p> Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p> 
+                </div>
+                <div class="cause-2-right">
+                    <h2> Сувениры </h2> 
+                    <p> Не только китайского, но и местного производства</p>
+                </div>
+            </div>
+        </section>
+       <section class="cause">
+            <div class="cause-1">
+                <div class="cause-1-right">
+                    <h2> Мост дьявола </h2>
+                    <p> Да, по нему можно пройти! Если конечно вы осмелитесь </p>
+                </div>
+                <div class="cause-1-img">
+                    <img src="http://placehold.it/150x100" width="" height="" alt="Мост дьявола">
+                </div>
+            </div>
+            <div class="cause-2">
+                <div class="cause-2-left">
+                    <h2> Небольшая площадь </h2> 
+                    <p> Все достопримечательности находятся очень близко</p>
+                </div>
+                <div class="cause-2-center">
+                    <h2> Красивая дорога </h2> 
+                    <p> Ехать в Седону из Лас-Вегаса совсем не скучно!</p> 
+                </div>
+                <div class="cause-2-right">
+                    <h2> Мало туристов </h2> 
+                    <p> Большинство едет в гранд каньон и толпится там</p>
+                </div>
+            </div>
+        </section>
+        <div class="question">
+            <b> Заинтересовались?</b>
+            <p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
+        </div>
+        <div class="search-hostel">
+            <h2> Поиск гостинницы в Седоне </h2>
+            <form action="#" method="get">
+                <label> 
+                    Дата заезда
+                    <input type="date" name="arrival-date" value="2016-04-24">
+                </label>
+                <label>
+                    Дата выезда
+                    <input type="date" name="departure-date" value="2016-06-04">
+                </label>
+                <label>
+                    Взрослые:
+                    <input type="text" name="adults-number" value="2">
+                </label>
+                <label>
+                    Дети:
+                    <input type="text" name="children-number" value="0">
+                </label>
+                <input type="submit" value="Найти">
+            </form>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="footer-hashtag">
+            <a href="#"> #visitsedona </a>  
+        </div>
+        <div class="footer-social">
+            <a class="social-btn-twitter" href="#"> Твиттер </a>
+            <a class="social-btn-facebook" href="#"> Фейсбук </a>
+            <a class="social-btn-youtube" href="#"> Ютуб </a>
+        </div>
+        <div class="footer-copyright">
+            <p> Website by</p>
+            <a href="#"> HTML Academy</a>
+        </div>
+      </footer>
   </body>
 </html>
