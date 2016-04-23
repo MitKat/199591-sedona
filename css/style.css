@@ -18,3 +18,197 @@ h2 {
   color: #000000;
   font-weight: bold;
 }
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column1{
+  float: left;
+  width: 20%;
+  min-height: 56px;
+}
+.column2{
+  float: right;
+  width: 20%;
+  min-height: 56px;
+}
+.img-slogan{
+  text-align: center;
+  padding-top: 75px;
+  min-height: 508px;
+  background: #e4f1f9;
+  margin-bottom: 60px;
+}
+h1 {
+  width: 550px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.under-h1{
+  line-height: 26px;
+  width: 550px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 55px; 
+}
+.cause-item{
+  min-height: 256px;
+}
+.cause-content h2{
+  color: white;
+}
+.cause-content{
+  text-align: center;
+  color: white;
+  background: #81b3d2;
+  width: 28%; 
+  height: 167px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 57px;
+  padding-bottom: 32px;
+}
+.cause-item-left{
+  float: left; 
+}
+.img-right{
+  float: right;
+  width: 66%;
+  height: 256px;
+  background-image: url(/img/town.jpg);
+  background-repeat: no-repeat; 
+}
+.cause-item-block{
+  float: left;
+  width: 25%;
+  height: 188px;
+  text-align: center;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 56px;
+  padding-bottom: 84px;
+}
+.cause-item-right{
+  float: right;
+}
+.img-left{
+  float: left;
+  width: 66%;
+  height: 256px;
+  background-image: url(/img/bridge.jpg);
+  background-repeat: no-repeat;
+}
+.cause-item-gray{
+  background: #eeeeee;
+}
+.question b{
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+.question p{
+  line-height: 21px;
+}
+.question{
+  width: 575px;
+  text-align: center;
+  margin: 0 auto;
+}
+.question-searh{
+  height: 440px; 
+  margin-top: 50px;
+}
+.btn-searh{
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+  font-family: "PTSans", "Myriad Pro";
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 30px 100px;
+  background: #766357;
+}
+form{
+  margin-top: 60px;
+  text-align: center;
+}
+.main-footer{
+  text-align: center;
+  min-height: 115px;
+}
+.footer-hashtag{
+  float: left;
+  width: 280px;
+  
+}
+.footer-social{
+  width: 400px;
+  margin: 0 auto;
+}
+.footer-copyright{
+  float: right;
+  width: 280px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
