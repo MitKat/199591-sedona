@@ -1,81 +1,88 @@
 body {
   font-size: 14px;
   line-height: 21px;
-  color: #333333;
-  font-family: "PTSans", "Myriad Pro";
+  color: #333;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
 }
-h1{
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-  font-weight: bold;
-}
+
+h1,
 h2 {
   font-size: 21px;
-  line-height: 21px;
-  color: #000000;
+  color: #000;
   font-weight: bold;
 }
-.container{
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column-left{
-  float: left;
-  width: 20%;
-  min-height: 56px;
-  text-align: center;
-}
-.column-right{
-  float: right;
-  width: 20%;
-  text-align: center;
-  min-height: 56px;
-}
 
-.logo{
-  float: left;
-  width: 18%;
-  text-align: center;
-}
-.img-slogan{
-  text-align: center;
-  padding-top: 75px;
-  min-height: 500px;
-  background-image: url(/img/background%20sedona.jpg);
-  background-repeat: no-repeat;
-  margin-bottom: 2px;
-}
 h1 {
+  line-height: 26px;
   width: 550px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 35px;
 }
-.under-h1{
+
+h2 {
+  line-height: 21px;
+}
+
+.container{
+  max-width: 1200px;
+  min-width: 768px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  height: 56px;
+  text-align: center;
+}
+
+.column-left {
+  float: left;
+  width: 20%;
+}
+
+.column-right {
+  float: right;
+  width: 20%;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+}
+
+.img-slogan {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 73px;
+  background: url(../img/sedona-background.jpg) no-repeat;
+  margin-bottom: 50px;
+} 
+
+.under-h1 {
   line-height: 26px;
   width: 550px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 55px; 
 }
-.cause-item{
-  min-height: 256px;
+
+.cause-content h2 {
+  color: #fff;
 }
-.cause-content h2{
-  color: white;
-}
-.cause-content{
+
+.cause-content {
   text-align: center;
-  color: white;
+  color: #fff;
   background: #81b3d2;
   width: 28%; 
   height: 167px;
@@ -84,17 +91,16 @@ h1 {
   padding-top: 57px;
   padding-bottom: 32px;
 }
-.cause-item-left{
+
+.cause-item-left {
   float: left; 
 }
-.img-right{
-  float: right;
-  width: 66%;
-  height: 256px;
-  background-image: url(/img/town.jpg);
-  background-repeat: no-repeat; 
+
+.img-right {
+  background: url(../img/town.jpg) no-repeat 100% 50%;
 }
-.cause-item-block{
+
+.cause-item-block {
   float: left;
   width: 25%;
   height: 188px;
@@ -104,91 +110,101 @@ h1 {
   padding-top: 56px;
   padding-bottom: 84px;
 }
-.cause-item-right{
+
+.cause-item-right {
   float: right;
 }
-.img-left{
-  float: left;
-  width: 66%;
-  height: 256px;
-  background-image: url(/img/bridge.jpg);
-  background-repeat: no-repeat;
+
+.img-left {
+  background: url(../img/bridge.jpg) no-repeat 0 50%;
 }
-.cause-item-gray{
-  background: #eeeeee;
+
+.cause-item-gray {
+  background: #eee;
 }
-.question b{
+
+.question b {
   font-size: 30px;
   line-height: 24px;
-  color: #000000;
+  color: #000;
   font-weight: bold;
 }
-.question p{
+
+.question p {
   line-height: 21px;
 }
-.question{
+
+.question {
   width: 575px;
   text-align: center;
   margin: 0 auto;
 }
-.question-searh{
+
+.question-search {
   height: 440px; 
   margin-top: 50px;
 }
-.btn-searh{
+
+.btn-search {
   font-size: 21px;
   line-height: 26px;
-  color: white;
-  font-family: "PTSans", "Myriad Pro";
+  color: #fff;
   font-weight: bold;
-  text-transform: uppercase;
   padding: 30px 100px;
   background: #766357;
 }
-form{
+
+form {
   margin-top: 50px;
   text-align: center;
 }
-label{
+
+label {
   display: inline-block;
   padding: 10px 10px;
 }
-form .column{
+
+form .column {
   width: 500px;
 }
-form .column-left{
+
+form .column-left {
   width: 260px;
 }
-form .column-right{
+
+form .column-right {
   width: 250px;
 }
-.btn-find{
+
+.btn-find {
   width: 116px;
   padding: 20px 170px;
   background-color: #81b3d2;
 }
-.main-footer{
+ 
+.main-footer {
   text-align: center;
-  min-height: 115px;
 }
-.footer-hashtag{
+
+.footer-hashtag {
   float: left;
-  width: 140px;
-  margin-left: 72px;
-  padding: 50px 50px;
+  width: 12%;
+  margin-left: 6%;
+  padding: 50px 4%;
 }
-.footer-social{
+
+.footer-social {
   float: left;
-  width: 160px;
-  margin: 0 60px;
-  padding: 35px 120px;
-  
+  width: 33%;
+  margin: 0 5%;
+  padding: 35px 1%; 
 }
-.footer-copyright{
+ 
+.footer-copyright {
   float: right;
-  width: 230px;
-  margin-right: 72px;
-  padding: 30px 5px;
+  width: 20%;
+  margin-right: 6%;
+  padding: 30px 0;
 }
 
 
