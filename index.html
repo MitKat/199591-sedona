@@ -11,17 +11,17 @@
     <div class="container clearfix">
       <nav class="main-navigation">
       <ul>
-        <li class="column1">
+        <li class="column-left">
           <a href="#">Информация</a>
         </li>
-        <li class="column1">
+        <li class="column-left">
           <a href="#">Фото и видео</a>
         </li>
-        <li class="column2">
-          <a href="#">Карта штата</a>
-        </li>
-        <li class="column2">
+        <li class="column-right">
           <a href="#">Гостинницы</a>
+        </li>
+        <li class="column-right">
+          <a href="#">Карта штата</a>
         </li>
       </ul>
       </nav>
@@ -98,23 +98,23 @@
       <div class="question-searh">
         <a class="btn-searh" href="#">Поиск гостинницы в Седоне</a>
         <form action="#" method="get">
-          <label> 
+          <label class="column"> 
             Дата заезда
             <input type="date" name="arrival-date" value="2016-04-24">
           </label>
-          <label>
+          <label class="column">
             Дата выезда
             <input type="date" name="departure-date" value="2016-06-04">
           </label>
-          <label>
+          <label class="column-left">
             Взрослые:
             <input type="text" name="adults-number" value="2">
           </label>
-          <label>
+          <label class="column-right">
             Дети:
             <input type="text" name="children-number" value="0">
           </label>
-          <input type="submit" value="Найти">
+          <a class="btn-find" href="#"><input type="submit" value="Найти"></a> 
         </form>
       </div>
     </div>

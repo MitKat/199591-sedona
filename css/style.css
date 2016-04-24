@@ -28,22 +28,31 @@ h2 {
   display: table;
   clear: both;
 }
-.column1{
+.column-left{
   float: left;
   width: 20%;
   min-height: 56px;
+  text-align: center;
 }
-.column2{
+.column-right{
   float: right;
   width: 20%;
+  text-align: center;
   min-height: 56px;
+}
+
+.logo{
+  float: left;
+  width: 18%;
+  text-align: center;
 }
 .img-slogan{
   text-align: center;
   padding-top: 75px;
-  min-height: 508px;
-  background: #e4f1f9;
-  margin-bottom: 60px;
+  min-height: 500px;
+  background-image: url(/img/background%20sedona.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 2px;
 }
 h1 {
   width: 550px;
@@ -137,8 +146,26 @@ h1 {
   background: #766357;
 }
 form{
-  margin-top: 60px;
+  margin-top: 50px;
   text-align: center;
+}
+label{
+  display: inline-block;
+  padding: 10px 10px;
+}
+form .column{
+  width: 500px;
+}
+form .column-left{
+  width: 260px;
+}
+form .column-right{
+  width: 250px;
+}
+.btn-find{
+  width: 116px;
+  padding: 20px 170px;
+  background-color: #81b3d2;
 }
 .main-footer{
   text-align: center;
@@ -146,16 +173,22 @@ form{
 }
 .footer-hashtag{
   float: left;
-  width: 280px;
-  
+  width: 140px;
+  margin-left: 72px;
+  padding: 50px 50px;
 }
 .footer-social{
-  width: 400px;
-  margin: 0 auto;
+  float: left;
+  width: 160px;
+  margin: 0 60px;
+  padding: 35px 120px;
+  
 }
 .footer-copyright{
   float: right;
-  width: 280px;
+  width: 230px;
+  margin-right: 72px;
+  padding: 30px 5px;
 }
 
 
