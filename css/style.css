@@ -18,44 +18,59 @@ h1 {
   line-height: 26px;
   width: 550px;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 35px;
+  margin: 0 auto 35px;
 }
 
 h2 {
   line-height: 21px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container{
   max-width: 1200px;
   min-width: 768px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .clearfix::after {
-  content: "";
+  content: " ";
   display: table;
   clear: both;
 }
 
-.main-header {
-  height: 56px;
-  text-align: center;
+.main-navigation {
+  margin: 0 6%;
+}
+
+ul {
+  list-style: none;
+  padding: 0 0;
+}
+
+.main-navigation a {
+  color: #333;
+  font-weight: bold;
 }
 
 .column-left {
   float: left;
   width: 20%;
+  text-align: left;
+  padding-bottom: 20px;
 }
 
 .column-right {
   float: right;
   width: 20%;
+  text-align: right;
 }
 
 .logo {
   position: absolute;
+  top: 0;
   left: 50%;
   margin-left: -69px;
 }
@@ -64,7 +79,9 @@ h2 {
   text-align: center;
   padding-top: 75px;
   padding-bottom: 73px;
-  background: url(../img/sedona-background.jpg) no-repeat;
+  background-image: url(../img/edge-sedona-background.png), url(../img/sedona-background.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom;
   margin-bottom: 50px;
 } 
 
@@ -84,10 +101,10 @@ h2 {
   text-align: center;
   color: #fff;
   background: #81b3d2;
-  width: 28%; 
+  width: 26%; 
   height: 167px;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 4%;
+  padding-right: 4%;
   padding-top: 57px;
   padding-bottom: 32px;
 }
@@ -102,13 +119,17 @@ h2 {
 
 .cause-item-block {
   float: left;
-  width: 25%;
-  height: 188px;
+  width: 23%;
   text-align: center;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 56px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 55px;
   padding-bottom: 84px;
+}
+
+.cause-item-gray {
+  height: 256px;
+  background: #eee;
 }
 
 .cause-item-right {
@@ -119,8 +140,10 @@ h2 {
   background: url(../img/bridge.jpg) no-repeat 0 50%;
 }
 
-.cause-item-gray {
-  background: #eee;
+.question {
+  width: 575px;
+  text-align: center;
+  margin: 50px auto;
 }
 
 .question b {
@@ -132,57 +155,84 @@ h2 {
 
 .question p {
   line-height: 21px;
+  padding-top: 36px;
+  padding-bottom: 80px;
+  margin: 0;
 }
 
-.question {
-  width: 575px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.question-search {
-  height: 440px; 
-  margin-top: 50px;
-}
-
-.btn-search {
+.question a {
   font-size: 21px;
   line-height: 26px;
   color: #fff;
   font-weight: bold;
-  padding: 30px 100px;
+}
+
+.btn-search {
+  padding: 30px 130px;
   background: #766357;
 }
 
 form {
-  margin-top: 50px;
+  padding-top: 100px;
   text-align: center;
 }
 
 label {
   display: inline-block;
-  padding: 10px 10px;
-}
-
-form .column {
   width: 500px;
+  text-align: center;
+  font-weight: bold;
 }
 
-form .column-left {
-  width: 260px;
+.adults-left {
+  display: inline-block;
+  width: 240px;
+  text-align: left;
 }
 
-form .column-right {
-  width: 250px;
+.children-right {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+input[type="date"] {
+  width: 316px;
+  background-color: #f2f2f2;
+  margin: 0 25px 28px;
+  padding: 12px 15px;
+  border: none;
+}
+
+input[type="text"] {
+  width: 100px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 12px 10px;
+  margin-bottom:  53px;
+  margin-left: 20px;
+  text-align: center;
 }
 
 .btn-find {
   width: 116px;
   padding: 20px 170px;
   background-color: #81b3d2;
+  margin-bottom: 50px;
 }
- 
+
+.btn-find input[type="submit"] {
+  font-size: 21px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
+}
+
 .main-footer {
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -193,28 +243,134 @@ form .column-right {
   padding: 50px 4%;
 }
 
+.footer-hashtag a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+  font-weight: bold;
+}
+
 .footer-social {
   float: left;
   width: 33%;
   margin: 0 5%;
   padding: 35px 1%; 
 }
+
+.social-btn {
+  display: inline-block;
+  width: 44px;
+  height: 47px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-color: #81b3d2;
+}
  
 .footer-copyright {
   float: right;
   width: 20%;
   margin-right: 6%;
-  padding: 30px 0;
+  padding: 35px 0;
 }
 
+.footer-copyright  p {
+  display: inline-block;
+  vertical-align: middle;
+}
 
+.footer-copyright img {
+  display: inline-block;
+  vertical-align: middle;
+}
 
+/* catalog */
 
+form {
+  margin-top: 0;
+}
 
+.filters {
+  padding-top: 20px;
+  vertical-align: bottom;
+  color: #fff;
+  background: url(../img/catalog-background.jpg) no-repeat;
+}
 
+.filters h2 {
+  font-size: 16px;
+  color: #fff;
+  vertical-align: bottom;
+}
 
+.option {
+  float: left;
+  width: 20%;
+  margin-left: 6%;
+  text-align: left;
+  
+}
 
+.option-price {
+  float: right;
+  width: 30%;
+  margin-right: 6%;
+  text-align: left;
+}
 
+.result {
+  padding: 30px 6%;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.result span {
+  float: left;
+  width: 130px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+  font-weight: bold;
+}
+
+.sort {
+  float: left;
+  width: 380px;
+}
+
+.arrows {
+  float: right;
+  width: 300px;
+  text-align: right;
+}
+
+.hotels {
+  padding: 30px 6%;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.img-hotel {
+  display: inline-block;
+  padding: 30px 0 30px;
+}
+
+.info-hotel {
+  display: inline-block;
+  width: 60%;
+  vertical-align: top;
+  margin-left: 3%;
+}
+
+.info-hotel p {
+  display: inline-block;
+  width: 110px;
+}
+
+.rating {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+}
 
 
 
