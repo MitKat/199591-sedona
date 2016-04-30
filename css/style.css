@@ -25,10 +25,6 @@ h2 {
   line-height: 21px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .container{
   max-width: 1200px;
   min-width: 768px;
@@ -45,27 +41,38 @@ a {
   margin: 0 6%;
 }
 
-ul {
+.main-navigation ul {
   list-style: none;
-  padding: 0 0;
+  padding: 0;
+  margin: 0;
 }
 
 .main-navigation a {
   color: #333;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #766357;
 }
 
 .column-left {
   float: left;
   width: 20%;
   text-align: left;
-  padding-bottom: 20px;
+  padding: 19px 0;
 }
 
 .column-right {
   float: right;
   width: 20%;
   text-align: right;
+  padding: 19px 0;
 }
 
 .logo {
@@ -79,9 +86,7 @@ ul {
   text-align: center;
   padding-top: 75px;
   padding-bottom: 73px;
-  background-image: url(../img/edge-sedona-background.png), url(../img/sedona-background.jpg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom;
+  background: url(../img/edge-sedona-background.png) no-repeat bottom, #b88177 url(../img/sedona-background.jpg) no-repeat;
   margin-bottom: 50px;
 } 
 
@@ -91,10 +96,6 @@ ul {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 55px; 
-}
-
-.cause-content h2 {
-  color: #fff;
 }
 
 .cause-content {
@@ -109,12 +110,17 @@ ul {
   padding-bottom: 32px;
 }
 
+.cause-content h2 {
+  color: #fff;
+}
+
 .cause-item-left {
   float: left; 
 }
 
 .img-right {
-  background: url(../img/town.jpg) no-repeat 100% 50%;
+  height: 256px;
+  background: #b88177 url(../img/town.jpg) no-repeat 100% 50%;
 }
 
 .cause-item-block {
@@ -137,13 +143,13 @@ ul {
 }
 
 .img-left {
-  background: url(../img/bridge.jpg) no-repeat 0 50%;
+  height: 256px;
+  background: #b88177 url(../img/bridge.jpg) no-repeat 0 50%;
 }
 
 .question {
-  width: 575px;
   text-align: center;
-  margin: 50px auto;
+  margin: 50px auto 0;
 }
 
 .question b {
@@ -155,9 +161,15 @@ ul {
 
 .question p {
   line-height: 21px;
-  padding-top: 36px;
-  padding-bottom: 80px;
-  margin: 0;
+  padding: 0;
+  margin: 36px auto 50px;
+}
+
+.question-search{
+  width: 570px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 .question a {
@@ -165,82 +177,102 @@ ul {
   line-height: 26px;
   color: #fff;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .btn-search {
-  padding: 30px 130px;
+  display: block;
+  width: 572px;
+  height: 55px;
+  padding-top: 30px;
   background: #766357;
 }
 
-form {
-  padding-top: 100px;
-  text-align: center;
+.question-search form {
+  display: none;
+  position: absolute;
+  top: 85px;
+  left: 0;
+  width: 456px;
+  height: 286px;
+  text-align: right;
+  background: #fff;
+  box-shadow: 0 8px 20px -5px;
+  padding: 54px 58px;
 }
 
-label {
+.question-search:hover form {
+  display: block;
+}
+
+.question-search label {
   display: inline-block;
-  width: 500px;
-  text-align: center;
   font-weight: bold;
 }
 
-.adults-left {
-  display: inline-block;
-  width: 240px;
-  text-align: left;
-}
-
-.children-right {
-  display: inline-block;
-  width: 200px;
-  text-align: right;
-}
-
-input[type="date"] {
-  width: 316px;
-  background-color: #f2f2f2;
-  margin: 0 25px 28px;
-  padding: 12px 15px;
-  border: none;
-}
-
 input[type="text"] {
-  width: 100px;
+  display: inline-block;
   background-color: #f2f2f2;
   border: none;
-  padding: 12px 10px;
-  margin-bottom:  53px;
-  margin-left: 20px;
+  width: 310px;
+  text-align: left;
+  padding: 8px 15px;
+  margin: 0 0 29px 20px;
+}
+
+.children input[type="text"],
+.adults input[type="text"] {
+  display: inline-block;
+  background-color: #f2f2f2;
+  border: none;
+  width: 90px;
   text-align: center;
+  padding: 8px 12px;
+  margin-bottom: 55px;
+  margin-left: 25px;
 }
 
-.btn-find {
-  width: 116px;
-  padding: 20px 170px;
+.adults input[type="text"] {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.children {
+  margin-left: 44px;
+}
+
+.question-search input[type="submit"] {
+  display: block;
+  width: 100%;
+  text-align: center;
   background-color: #81b3d2;
-  margin-bottom: 50px;
-}
-
-.btn-find input[type="submit"] {
   font-size: 21px;
   line-height: 26px;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #81b3d2;
   border: none;
+  cursor: pointer;
+  padding: 18px 29px;
+}
+
+input[type="submit"]:hover {
+  background: #669ec0;
 }
 
 .main-footer {
   margin-top: 80px;
   text-align: center;
+  background-color: #fff;
+  opacity: 0.9;
+  margin-top: -120px;
 }
 
 .footer-hashtag {
   float: left;
   width: 12%;
   margin-left: 6%;
-  padding: 50px 4%;
+  padding: 46px 4%;
 }
 
 .footer-hashtag a {
@@ -252,6 +284,7 @@ input[type="text"] {
 
 .footer-social {
   float: left;
+  font-size: 0;
   width: 33%;
   margin: 0 5%;
   padding: 35px 1%; 
@@ -260,12 +293,16 @@ input[type="text"] {
 .social-btn {
   display: inline-block;
   width: 44px;
-  height: 47px;
+  height: 48px;
   margin-right: 6px;
   vertical-align: middle;
   background-color: #81b3d2;
 }
- 
+
+.social-btn:hover {
+  background: #669ec0;
+}
+
 .footer-copyright {
   float: right;
   width: 20%;
@@ -285,29 +322,28 @@ input[type="text"] {
 
 /* catalog */
 
-form {
-  margin-top: 0;
-}
-
 .filters {
   padding-top: 20px;
-  vertical-align: bottom;
   color: #fff;
-  background: url(../img/catalog-background.jpg) no-repeat;
+  background: #768ea6 url(../img/catalog-background.jpg) no-repeat;
 }
 
 .filters h2 {
   font-size: 16px;
   color: #fff;
-  vertical-align: bottom;
+}
+
+.filters ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .option {
   float: left;
   width: 20%;
-  margin-left: 6%;
   text-align: left;
-  
+  margin-left: 6%;
 }
 
 .option-price {
