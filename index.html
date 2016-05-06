@@ -19,7 +19,7 @@
           <a href="#">Фото и видео</a>
         </li>
         <li class="column-right">
-          <a href="catalog.html">Гостинницы</a>
+          <a href="catalog.html">Гостиницы</a>
         </li>
         <li class="column-right">
           <a href="#">Карта штата</a>
@@ -35,12 +35,12 @@
     <div class="img-slogan">
       <img src="img/slogan.png" width="458" height="352" alt="welcome">
     </div>
-    <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <h1>Седона -- небольшой городок в Аризоне, заслуживающий большего!</h1>
     <p class="under-h1">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     <div class="cause-item img-right clearfix">
       <div class="cause-content cause-item-left ">
         <h2>Настоящий городок</h2>
-        <p>- №1 -</p>
+        <span>- №1 -</span>
         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
     </div>
@@ -69,26 +69,26 @@
     </div>
     <div class="cause-item img-left clearfix">
       <div class="cause-content cause-item-right">
-        <h2>Мост дьявола</h2>
-        <p>- №2 -</p>
+        <h2>Там есть мост дявола</h2>
+        <span>- №2 -</span>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
     </div>
     <div class="cause-item cause-item-gray clearfix">
       <div class="cause-item-block">
         <h2>Небольшая площадь</h2>
-        <p>- №3 -</p>
+        <span>- №3 -</span>
         <p>Все достопримечательности
           находятся очень близко</p>
       </div>
       <div class="cause-item-block">
         <h2>Красивая дорога</h2>
-        <p>- №4 -</p>
+        <span>- №4 -</span>
         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
       <div class="cause-item-block">
         <h2>Мало туристов</h2>
-        <p>- №5 -</p>
+        <span>- №5 -</span>
         <p>Большинство едет в гранд каньон и толпится там</p>
       </div>
     </div>
@@ -97,27 +97,33 @@
       <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостинниц в Седоне</p>
       <div class="question-search">
         <a class="btn-search" href="#">Поиск гостинницы в Седоне</a>
-        <form action="#" method="get">
+        <form class="search-form form-close" action="#" method="get">
           <label> 
-            Дата заезда:
-            <input type="text" name="arrival-date" value="24 апреля 2016">
+            <span>Дата заезда:</span>
+            <input type="text" name="arrival-date" placeholder="24 апреля 2016">
+            <div class="icon-calendar"></div>
           </label>
           <label>
-            Дата выезда:
-            <input type="text" name="departure-date" value="4 июля 2016">
+            <span>Дата выезда:</span>
+            <input type="text" name="departure-date" placeholder="4 июля 2016">
+            <div class="icon-calendar"></div>
           </label>
           <label class="adults">
-            Взрослые:
-            <input type="text" name="adults-number" value="2">
+            <span>Взрослые:</span>
+            <div class="icon-minus"></div>
+            <input type="text" name="adults-number" placeholder="2">
+            <div class="icon-plus"></div>
           </label>
           <label class="children">
-            Дети:
-            <input type="text" name="children-number" value="0">
+            <span>Дети:</span>
+            <div class="icon-minus"></div>
+            <input type="text" name="children-number" placeholder="0">
+            <div class="icon-plus"></div>
           </label>
-          <a href="catalog.html"><input type="submit" value="Найти"></a> 
+          <input type="submit" value="Найти"> 
         </form>
       </div>
-        <img src="img/map.jpg" width="1200" height="593"  alt="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418205.6245765246!2d-111.9560727990556!3d35.025939504069605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1462478527784" width="100%" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </main>
   <footer class="main-footer">
@@ -132,9 +138,11 @@
       </div>
       <div class="footer-copyright">
         <p>Website by</p>
-        <a href="#"><img src="img/htmlacademy.png" width="113" height="39" alt="htmlacademy"></a>
+        <a class="html-academy" href="#"></a>
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
+  
   </body>
 </html>
