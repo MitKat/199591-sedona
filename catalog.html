@@ -40,19 +40,19 @@
             <li>
               <label> 
                 <input type="checkbox" name="pool" checked>
-                Бассейн
+                <span>Бассейн</span>
               </label>
             </li>
             <li>
               <label> 
                 <input type="checkbox" name="parking" >
-                Парковка
+                <span>Парковка</span>
               </label>
             </li>
             <li>
               <label> 
                 <input type="checkbox" name="wifi" >
-                Wi-fi
+                <span>Wi-fi</span>
               </label>
             </li>
           </ul>
@@ -63,26 +63,41 @@
             <li>
               <label> 
                 <input type="checkbox" name="hotel" checked>
-                Гостиница
+                <span>Гостиница</span>
               </label>
             </li>
             <li>
               <label> 
                 <input type="checkbox" name="motel" checked>
-                Мотель
+                <span>Мотель</span>
               </label>
             </li>
             <li>
               <label> 
                 <input type="checkbox" name="apartments" checked>
-                Апартаменты
+                <span>Апартаменты</span>
               </label>
             </li>
           </ul>
         </div>
         <div class="option-price">
           <h2>Стоимость в сутки (руб):</h2>
-          <div class="interval-price">            
+          <div class="interval-price"> 
+            <label class="min-price">
+              от
+              <input type="text" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+              до
+              <input type="text" name="min-price" value="3000">
+            </label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
           </div>
           <input type="submit" value="Показать">
         </div>
@@ -97,8 +112,8 @@
         <a class="sort sort-rating" href="#">по рейтингу</a>
       </div>
       <div class="arrows-right">
-        <a class="arrows up" href="#">по воз</a>
-        <a class="arrows down active" href="#">по убы</a>
+        <a class="arrows" href="#">по возрастанию<span class="icon-up-dir"></span></a>
+        <a class="arrows" href="#">по убыванию<span class="icon-down-dir active"></span></a>
       </div>
     </section>
     <section class="hotels clearfix">
@@ -115,7 +130,10 @@
         <a class="btn-book" href="#">Забронировать</a>
       </div>
       <div class="rating">
-        <img class="icon-star" src="img/star-four.png" width="89" height="17">
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
         <p> Рейтинг:8,5</p>
       </div>
     </section>
@@ -133,7 +151,8 @@
         <a class="btn-book" href="#">Забронировать</a>
       </div>
       <div class="rating">
-        <img class="icon-star" src="img/star-two.png" width="42" height="17">
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
         <p>Рейтинг:8,9</p>
       </div>
     </section>
@@ -151,7 +170,9 @@
         <a class="btn-book" href="#">Забронировать</a>
       </div>
       <div class="rating">
-        <img class="icon-star" src="img/star-three.png" width="65" height="17">
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
         <p>Рейтинг:9,2</p>
       </div>
     </section> 

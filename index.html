@@ -35,7 +35,7 @@
     <div class="img-slogan">
       <img src="img/slogan.png" width="458" height="352" alt="welcome">
     </div>
-    <h1>Седона -- небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
     <p class="under-h1">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     <div class="cause-item img-right clearfix">
       <div class="cause-content cause-item-left ">
@@ -101,29 +101,29 @@
           <label> 
             <span>Дата заезда:</span>
             <input type="text" name="arrival-date" placeholder="24 апреля 2016">
-            <div class="icon-calendar"></div>
+            <button class="icon-calendar"></button>
           </label>
           <label>
             <span>Дата выезда:</span>
             <input type="text" name="departure-date" placeholder="4 июля 2016">
-            <div class="icon-calendar"></div>
+            <button class="icon-calendar"></button>
           </label>
           <label class="adults">
             <span>Взрослые:</span>
-            <div class="icon-minus"></div>
+            <button class="icon-minus"></button>
             <input type="text" name="adults-number" placeholder="2">
-            <div class="icon-plus"></div>
+            <button class="icon-plus"></button>
           </label>
           <label class="children">
             <span>Дети:</span>
-            <div class="icon-minus"></div>
+            <button class="icon-minus"></button>
             <input type="text" name="children-number" placeholder="0">
-            <div class="icon-plus"></div>
+            <button class="icon-plus"></button>
           </label>
           <input type="submit" value="Найти"> 
         </form>
-      </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418205.6245765246!2d-111.9560727990556!3d35.025939504069605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1462478527784" width="100%" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>  
+    <div class="yandex-map" id="map"></div>
     </div>
   </main>
   <footer class="main-footer">
@@ -142,6 +142,7 @@
       </div>
     </div>
   </footer>
+  <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/script.js"></script>
   
   </body>
