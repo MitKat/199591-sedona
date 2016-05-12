@@ -5,7 +5,7 @@
     <title>Седона от Катерины</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 <body>
   <header class="main-header">
@@ -39,7 +39,7 @@
     <p class="under-h1">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     <div class="cause-item img-right clearfix">
       <div class="cause-content cause-item-left ">
-        <h2>Настоящий городок</h2>
+        <h2>Настоящий<br> городок</h2>
         <span>- №1 -</span>
         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
@@ -69,7 +69,7 @@
     </div>
     <div class="cause-item img-left clearfix">
       <div class="cause-content cause-item-right">
-        <h2>Там есть мост дявола</h2>
+        <h2>Там есть<br> мост дявола</h2>
         <span>- №2 -</span>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
@@ -87,7 +87,7 @@
         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
       <div class="cause-item-block">
-        <h2>Мало туристов</h2>
+        <h2>Мало<br> туристов</h2>
         <span>- №5 -</span>
         <p>Большинство едет в гранд каньон и толпится там</p>
       </div>
@@ -96,30 +96,30 @@
       <b>Заинтересовались?</b>
       <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостинниц в Седоне</p>
       <div class="question-search">
-        <a class="btn-search" href="#">Поиск гостинницы в Седоне</a>
-        <form class="search-form form-close" action="#" method="get">
+        <a class="btn-search" href="search-hotel.html">Поиск гостинницы в Седоне</a>
+        <form class="search-form" action="#" method="get">
           <label> 
             <span>Дата заезда:</span>
             <input type="text" name="arrival-date" placeholder="24 апреля 2016">
-            <button class="icon-calendar"></button>
           </label>
+          <button class="icon-calendar"></button>
           <label>
             <span>Дата выезда:</span>
             <input type="text" name="departure-date" placeholder="4 июля 2016">
-            <button class="icon-calendar"></button>
           </label>
+          <button class="icon-calendar"></button>
+          <button class="icon-minus adults-minus"></button>
           <label class="adults">
             <span>Взрослые:</span>
-            <button class="icon-minus"></button>
             <input type="text" name="adults-number" placeholder="2">
-            <button class="icon-plus"></button>
           </label>
+          <button class="icon-plus adults-plus"></button>
+          <button class="icon-minus"></button>
           <label class="children">
             <span>Дети:</span>
-            <button class="icon-minus"></button>
             <input type="text" name="children-number" placeholder="0">
-            <button class="icon-plus"></button>
           </label>
+          <button class="icon-plus"></button>
           <input type="submit" value="Найти"> 
         </form>
       </div>  
@@ -142,8 +142,9 @@
       </div>
     </div>
   </footer>
+
   <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script src="js/script.js"></script>
-  
+  <script src="js/script.min.js"></script>
+
   </body>
 </html>

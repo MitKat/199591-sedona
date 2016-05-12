@@ -41,7 +41,7 @@ h1,
 h2 {
   font-size: 21px;
   font-family: 'PT Sans', 'Arial', sans-serif;
-  color: #000;
+  color: #000; 
   font-weight: bold;
 }
 
@@ -119,7 +119,7 @@ h2 {
   text-align: center;
   width: 100%;
   padding: 75px 0;
-  background: url(../img/edge-sedona-background.png) no-repeat bottom, #b88177 url(../img/sedona-background.jpg) no-repeat;
+  background: url(../img/edge-sedona-background.png) no-repeat bottom, #81b3d2 url(../img/sedona-background.jpg) no-repeat;
   margin-bottom: 62px;
 } 
 
@@ -143,17 +143,19 @@ h2 {
   padding-bottom: 34px;
 }
 
-.cause-content h2 {
-  color: #fff;
-}
 
 .cause-item h2 {
-  padding: 0 25%;
+  padding: 0 20%;
   margin: 0;
 }
 
+.cause-content h2 {
+  padding: 0 10%;
+  color: #fff;
+}
 .cause-item span {
   display: inline-block;
+  vertical-align: middle;
   margin: 23px auto;
 }
 
@@ -207,6 +209,7 @@ h2 {
 .yandex-map {
   width: 100%;
   height: 590px;
+  background: #cbdda9 url(../img/map.jpg) no-repeat;
 }
 
 .question b {
@@ -256,14 +259,21 @@ h2 {
   background: #fff;
   box-shadow: 0 8px 40px -15px;
   padding: 56px 50px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .form-close {
-  display: none;
+  opacity: 1;
+  visibility: visible;
+  animation-name: closeform;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
 }
 
 .form-open {
-  display: block;
+  opacity: 1;
+  visibility: visible;
   animation-name: openform;
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
@@ -277,7 +287,11 @@ h2 {
     opacity: 1;
   }
 }
-
+@keyframes closeform {
+  to {
+    opacity: 0;
+  }
+}
 /*
 .question-search:hover .search-form {
   display: block;
@@ -295,12 +309,21 @@ h2 {
 
 input[type="text"] {
   background-color: #f2f2f2;
-  border: none;
   width: 315px;
   text-align: left;
   padding: 8px 15px;
   margin-left: 15px;
   border: 1px solid transparent;
+}
+
+input[type="text"]::-moz-placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+input[type="text"]::-webkit-placeholder {
+  color: #000;
+  font-weight: bold;
 }
 
 input[type="text"]:hover {
@@ -313,11 +336,15 @@ input[type="text"]:focus {
 }
 
 .icon-calendar {
+  width: 21px;
+  height: 21px;
   position: relative;
   background: transparent;
   border: none;
   margin-left: -40px;
-  margin-right: 35px;
+  margin-right: 25px;
+  padding-top: 20px;
+  cursor: pointer;
 }
 
 .icon-calendar::before { 
@@ -325,9 +352,9 @@ input[type="text"]:focus {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(0, -80%);
+  transform: translate(0, -100%);
   font-size: 21px;
-  cursor: pointer;
+  
   color: #a9a9a9;
 }
 
@@ -341,27 +368,32 @@ input[type="text"]:focus {
 
 .children input[type="text"],
 .adults input[type="text"] {
-  width: 54px;
+  width: 80px;
   text-align: center;
-  padding: 8px 30px;
-  margin-left: 0px;
+  padding: 8px 20px;
+  margin-left: 10px;
 }
 
-.adults input[type="text"] {
-  margin-left: 0px;
-}
-
-.children{
-  margin-left: 28px;
-  margin-right: -20px;
+.children {
+  margin-left: 5px;
+  margin-right:  5px;
 }
 
 .icon-minus {
+  width: 20px;
+  height: 20px;
   position: relative;
   background: transparent;
   border: none;
-  margin-right: -25px;
-  margin-left: 25px;
+  padding-top: 35px;
+  margin-left: 100px;
+  margin-right: -90px;
+  cursor: pointer;
+}
+
+.icon-minus.adults-minus {
+  margin-left: 110px;
+  margin-right: -120px;
 }
 
 .icon-minus::before { 
@@ -369,10 +401,7 @@ input[type="text"]:focus {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(0, -80%);
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
+  transform: translate(0, -50%);
   color: #a9a9a9;
 } 
 
@@ -385,21 +414,27 @@ input[type="text"]:focus {
 }
 
 .icon-plus {
+  width: 20px;
+  height: 20px;
   position: relative;
-  width: 25px;
   background: transparent;
   border: none;
+  padding-top: 35px;
+  margin-right: 20px;
+  margin-left: -40px;
+  cursor: pointer;
 }
+
+.icon-plus.adults-plus {
+  margin-left: -35px;
+}
+
 .icon-plus::before { 
   content: "\e801";
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(0, -80%);
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-  margin-left: -30px;
+  transform: translate(0, -50%);
   color: #a9a9a9;
 }
 
@@ -411,7 +446,7 @@ input[type="text"]:focus {
   color: #81b3d2;
 }
 
-.question-search input[type="submit"] {
+.search-form input[type="submit"] {
   display: block;
   width: 100%;
   text-align: center;
@@ -630,6 +665,10 @@ input[type="checkbox"]:checked+span::before {
   content: "\2611"; 
 }
 
+input[type="checkbox"]:disabled+span::before {
+  color: #6a6a6a;
+}
+
 .option-price {
   float: right;
   width: 30%;
@@ -661,16 +700,17 @@ input[type="checkbox"]:checked+span::before {
 .interval-price .min-price,
 .interval-price .max-price {
   display: inline-block;
-  width: 50%;
+  width: 40%;
   font-size: 14px;
   line-height: 29px;
   vertical-align: top;
   cursor: pointer;
   text-align: center;
+  padding-left: 8%;
 }
 
 .interval-price input[type="text"] {
-  width: 55px;
+  width: 40px;
   padding: 0;
   margin: 0;
   color: inherit;
@@ -678,6 +718,10 @@ input[type="checkbox"]:checked+span::before {
   background: transparent;
   border: none;
   outline: none;
+}
+
+.min-price input[type="text"] {
+  width: 20px;
 }
 
 
@@ -732,6 +776,7 @@ input[type="checkbox"]:checked+span::before {
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
+  z-index: 10;
 }
 
 .filters input[type="submit"]:hover {
@@ -943,9 +988,27 @@ a.arrows { font-size: 0; }
   background-color: #f2f2f2;
 }
 
+/* search-hotel */
+.wrapper {
+  background: #fff;
+  height: 600px;
+}
+.index-page {
+  width: 700px;
+  height: 50px;
+  padding: 70px 10%; 
+}
 
+.search-form.search-hotel {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  margin: -150px auto;
+}
 
-
+.footer-search-hotel {
+  margin-top: 0;
+}
 
 
 

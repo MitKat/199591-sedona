@@ -1,10 +1,19 @@
 var link = document.querySelector(".btn-search");
-var open = document.querySelector(".form-close");
+var open = document.querySelector(".search-form");
+
 var myMap;
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
-  open.classList.toggle("form-open");
+  
+  if (open.classList.contains("form-open")) {
+    open.classList.remove("form-open");
+    open.classList.add("form-close");
+  }
+  else {
+    open.classList.remove("form-close");
+    open.classList.add("form-open");
+  }
 });
 
 // Дождёмся загрузки API и готовности DOM.
