@@ -184,12 +184,11 @@ h2 {
 }
 
 .cause-item-gray {
-  height: 256px;
   background: #eee;
 }
 
 .cause-item-gray .cause-item-block {
-  padding: 50px 5% 70px;
+  padding: 47px 5% 59px;
 }
 
 .cause-item-right {
@@ -222,7 +221,7 @@ h2 {
 .question p {
   line-height: 21px;
   padding: 0;
-  margin: 28px auto 52px;
+  margin: 28px auto 50px;
 }
 
 .question a {
@@ -264,11 +263,8 @@ h2 {
 }
 
 .form-close {
-  opacity: 1;
-  visibility: visible;
-  animation-name: closeform;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .form-open {
@@ -285,11 +281,6 @@ h2 {
   }
   to {
     opacity: 1;
-  }
-}
-@keyframes closeform {
-  to {
-    opacity: 0;
   }
 }
 
@@ -324,6 +315,13 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 input[type="text"]::-moz-placeholder {
+  color: #000;
+  font-weight: bold;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+input[type="text"]:-ms-input-placeholder {
   color: #000;
   font-weight: bold;
   font-size: inherit;
@@ -633,7 +631,7 @@ input[type="submit"]:active {
 
 .filters {
   height: 166px;
-  padding: 25px 6%;
+  padding: 26px 6% 25px;
   color: #fff;
   background: #768ea6 url(../img/catalog-background.jpg) no-repeat;
 }
@@ -693,13 +691,13 @@ input[type="checkbox"]:disabled+span::before {
 }
 
 .option-price h2 {
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 
 .interval-price {
   position: relative;
   width: 99%;
-  height: 33px;
+  height: 31px;
   margin-left: 10px;
   margin-bottom: 20px;
   font-size: 0;
@@ -748,7 +746,6 @@ input[type="checkbox"]:disabled+span::before {
 .range-controls {
   position: relative;
   margin-left: 10px;
-  margin-bottom: 32px;
 }
 
 .range-controls .scale {
@@ -789,7 +786,7 @@ input[type="checkbox"]:disabled+span::before {
 
 .filters input[type="submit"] {
   display: block;
-  margin: 0 auto;
+  margin: 32px auto 0;
   width: 136px;
   font-family: inherit;
   font-size: inherit;
